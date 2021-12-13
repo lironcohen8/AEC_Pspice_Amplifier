@@ -1,0 +1,139 @@
+
+**** 12/13/21 22:18:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bode7"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\1\Amplifier-PSpi
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Bode7.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 11 0.1 40G
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLIFIER
+R_R1         N00169 N00198  100  
+R_R2         N00177 N00286  1.4Meg  
+R_R3         N00292 N00286  1k  
+R_R4         N00180 N00363  5k  
+R_R6         N00180 N00177  0.6Meg  
+C_C1         N00198 N00177  50n  
+C_C3         N00292 N00363  10u  
+V_V2         N00286 0 5Vdc
+V_V4         N00169 N00180 DC 0Vdc AC 1Vac 
+Q_Q1         N00292 N00177 N00180 QbreakN 
+C_C2         N00177 N00286  1n  
+V_V5         0 N00180 0Vdc
+
+**** RESUMING Bode7.cir ****
+.END
+
+**** 12/13/21 22:18:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bode7"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\1\Amplifier-PSpi
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS    1.000000E-12 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    6            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/13/21 22:18:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bode7"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\1\Amplifier-PSpi
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00169)    0.0000 (N00177)     .4989 (N00180)    0.0000 (N00198)    0.0000     
+
+(N00286)    5.0000 (N00292)    4.7616 (N00363)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -2.416E-04
+    V_V4         0.000E+00
+    V_V5        -2.416E-04
+
+    TOTAL POWER DISSIPATION   1.21E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/13/21 22:18:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Bode7"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\1\Amplifier-PSpi
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       78.14
+  Total job time (using Solver 1)   =         .99
+

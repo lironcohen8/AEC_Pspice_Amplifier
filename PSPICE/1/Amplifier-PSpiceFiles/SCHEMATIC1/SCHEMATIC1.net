@@ -1,0 +1,13 @@
+* source AMPLIFIER
+R_R1         N00169 N00198  100  
+R_R2         N00177 N00286  1.4Meg  
+R_R3         N00292 N00286  1k  
+R_R4         N00180 N00363  5k  
+R_R6         N00180 N00177  0.6Meg  
+C_C1         N00198 N00177  50n  
+C_C3         N00292 N00363  10u  
+V_V2         N00286 0 5Vdc
+V_V4         N00169 N00180 DC 0Vdc AC 1Vac 
+Q_Q1         N00292 N00177 N00180 QbreakN 
+C_C2         N00177 N00286  1n  
+V_V5         0 N00180 0Vdc

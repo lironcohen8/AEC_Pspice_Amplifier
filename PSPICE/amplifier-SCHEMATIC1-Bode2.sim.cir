@@ -1,0 +1,19 @@
+** Profile: "SCHEMATIC1-Bode2"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier-SCHEMATIC1-Bode2.sim ] 
+
+** Creating circuit file "amplifier-SCHEMATIC1-Bode2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE 
+.INC "amplifier-SCHEMATIC1.net" 
+
+.INC "amplifier-SCHEMATIC1.als"
+
+
+.END

@@ -4,59 +4,56 @@
   (Folder "Design Resources"
     (Folder "Library")
     (NoModify)
-    (File ".\amplifier.dsn"
-      (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (PSPICE_Regenerate_Netlist_Flag ".\false"))
+    (PSPICE_Regenerate_Netlist_Flag ".\false")
+    (File ".\amplifier.dsn"
+      (Type "Schematic Design")))
   (Folder "Outputs"
-    (File ".\amplifier-schematic1.net"
+    (File ".\amplifier-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files")
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-sim1.sim"
+         ".\amplifier-pspicefiles\schematic1\sim1.sim"
         (DisplayName "SCHEMATIC1-sim1")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode.sim"
+         ".\amplifier-pspicefiles\schematic1\bode.sim"
         (DisplayName "SCHEMATIC1-Bode")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode1.sim"
+         ".\amplifier-pspicefiles\schematic1\bode1.sim"
         (DisplayName "SCHEMATIC1-Bode1")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode2.sim"
+         ".\amplifier-pspicefiles\schematic1\bode2.sim"
         (DisplayName "SCHEMATIC1-Bode2")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode3.sim"
+         ".\amplifier-pspicefiles\schematic1\bode3.sim"
         (DisplayName "SCHEMATIC1-Bode3")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode4.sim"
+         ".\amplifier-pspicefiles\schematic1\bode4.sim"
         (DisplayName "SCHEMATIC1-Bode4")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode5.sim"
+         ".\amplifier-pspicefiles\schematic1\bode5.sim"
         (DisplayName "SCHEMATIC1-Bode5")
         (Type "PSpice Profile"))
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-bode6.sim"
+         ".\amplifier-pspicefiles\schematic1\bode6.sim"
         (DisplayName "SCHEMATIC1-Bode6")
         (Type "PSpice Profile"))
-      (ActiveProfile ".\amplifier-schematic1-b.sim")
+      (ActiveProfile ".\amplifier-pspicefiles\schematic1\b.sim")
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier-schematic1-b.sim"
+         ".\amplifier-pspicefiles\schematic1\b.sim"
         (DisplayName "SCHEMATIC1-b")
-        (Type "PSpice Profile")))
-    (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User)))
+        (Type "PSpice Profile"))))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (PartMRUSelector
     (VAC
