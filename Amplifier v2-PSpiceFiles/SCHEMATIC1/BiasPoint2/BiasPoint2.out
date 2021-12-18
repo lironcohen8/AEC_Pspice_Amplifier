@@ -1,0 +1,136 @@
+
+**** 12/18/21 10:23:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BiasPoint2"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpic
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BiasPoint2.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLIFIER V2
+V_V1         N00940 N00156 DC 0Vdc AC 1Vac 
+Q_Q1         N00168 N00156 N00184 QbreakN 
+Q_Q2         N00425 N00168 N00514 QbreakN 
+R_R1         N00940 N00145  1k  
+C_C1         N00145 N00184  1n  
+V_V2         0 N00156 5Vdc
+V_V3         N00425 0 5Vdc
+R_RL         N00156 N00514  1k  
+R_R3         N00184 N00425  1Meg  
+C_C2         N00184 N00425  1n  
+
+**** RESUMING BiasPoint2.cir ****
+.END
+
+**** 12/18/21 10:23:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BiasPoint2"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpic
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS    1.000000E-12 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    6            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/18/21 10:23:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BiasPoint2"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpic
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00145)   -5.0000 (N00156)   -5.0000 (N00168)   -4.8042 (N00184)    5.0000     
+
+(N00425)    5.0000 (N00514)   -5.0000 (N00940)   -5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -1.973E-09
+    V_V3        -1.973E-09
+
+    TOTAL POWER DISSIPATION   1.97E-08  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 12/18/21 10:23:40 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BiasPoint2"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpic
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.73
+  Total job time (using Solver 1)   =         .72
+

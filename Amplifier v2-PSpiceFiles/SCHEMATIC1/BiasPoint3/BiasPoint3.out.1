@@ -1,0 +1,56 @@
+
+**** 12/18/21 11:01:15 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpic
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BiasPoint3.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLIFIER V2
+V_V1         N00940 N00156 DC 0Vdc AC 1Vac 
+Q_Q1         N01797 N000710 N03316 QbreakN 
+Q_Q2         N00427 N01797 N00514 QbreakN 
+R_Rs         N00940 N001140  1k  
+C_C1         N001140 N00184  1n  
+V_V2         0 N00156 5Vdc
+V_V3         N00427 0 5Vdc
+R_RL         N00156 N00514  1k  
+R_R5         N00156 N000710  100  
+R_R6         N03352 N00427  1k  
+
+**** RESUMING BiasPoint3.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N03316.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N00184.
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N03352.
+
+ERROR(ORPSIM-15142): Node N00184 is floating
+

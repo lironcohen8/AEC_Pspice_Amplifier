@@ -1,0 +1,76 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3
+    amplifier.opj
+    amplifier.dsn
+    amplifier.dbk
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1
+    b.sim
+    Bode.sim
+    Bode1.sim
+    Bode2.sim
+    Bode3.sim
+    Bode4.sim
+    Bode5.sim
+    Bode6.sim
+    SCHEMATIC1.als
+    SCHEMATIC1.net
+    sim1.sim
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/b
+    b.1op
+    b.cir
+    b.dat
+    b.mif
+    b.mrk
+    b.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode
+    Bode.cir
+    Bode.mrk
+    Bode.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode1
+    Bode1.cir
+    Bode1.mrk
+    Bode1.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode2
+    Bode2.1op
+    Bode2.cir
+    Bode2.dat
+    Bode2.mif
+    Bode2.mrk
+    Bode2.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode3
+    Bode3.1op
+    Bode3.cir
+    Bode3.mif
+    Bode3.mrk
+    Bode3.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode4
+    Bode4.1op
+    Bode4.cir
+    Bode4.mif
+    Bode4.mrk
+    Bode4.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode5
+    Bode5.1op
+    Bode5.cir
+    Bode5.dat
+    Bode5.mif
+    Bode5.mrk
+    Bode5.out
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/Bode6
+    Bode6.1op
+    Bode6.cir
+    Bode6.dat
+    Bode6.mif
+    Bode6.mrk
+    Bode6.out
+    Bode6.prb
+c:/users/user/onedrive/desktop/liron/studies/pspice/pspiceamplifierproject/pspice/3/amplifier-PSpiceFiles/SCHEMATIC1/sim1
+    sim1.1op
+    sim1.cir
+    sim1.dat
+    sim1.mrk
+    sim1.out

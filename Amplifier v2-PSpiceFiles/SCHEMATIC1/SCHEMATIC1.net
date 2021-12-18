@@ -1,0 +1,18 @@
+* source AMPLIFIER V2
+V_V1         N00940 0 DC 0Vdc AC 1Vac 
+Q_Q1         N03951 N08048 N04350 QbreakN 
+Q_Q2         N06783 N03951 N05176 QbreakN 
+R_Rs         N00940 N001140  1k  
+C_C1         N001140 N04350  1n  
+V_V3         N04818 0 5Vdc
+R_RE1         N03641 N04350  1k  
+R_RC2         N06783 N04818  1k  
+R_RC1         N03951 0  1k  
+R_RB3         N03951 N04818  1k  
+R_RB4         0 N03951  1k  
+R_RE2         0 N05176  1k  
+C_C2         N03641 N04350  1n  
+R_R1         N08098 N08048  1k  
+V_V4         0 N08098 5Vdc
+V_V5         0 N03641 5Vdc
+R_R2         0 N08048  1k  

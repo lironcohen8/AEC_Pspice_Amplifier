@@ -1,0 +1,82 @@
+
+**** 12/12/21 20:44:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-sim1"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\amplifier-SCHEMATIC1-sim1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "amplifier-SCHEMATIC1-sim1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.PROBE 
+.INC "amplifier-SCHEMATIC1.net" 
+
+
+**** INCLUDING amplifier-SCHEMATIC1.net ****
+* source AMPLIFIER
+V_V1         N00039 0 3
+R_R1         N00039 N00046  2k  
+R_R2         N00046 0  1k  
+
+**** RESUMING amplifier-SCHEMATIC1-sim1.sim.cir ****
+.INC "amplifier-SCHEMATIC1.als"
+
+
+
+**** INCLUDING amplifier-SCHEMATIC1.als ****
+.ALIASES
+V_V1            V1(+=N00039 -=0 )
+R_R1            R1(1=N00039 2=N00046 )
+R_R2            R2(1=N00046 2=0 )
+.ENDALIASES
+
+**** RESUMING amplifier-SCHEMATIC1-sim1.sim.cir ****
+.END
+
+**** 12/12/21 20:44:54 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-sim1"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\amplifier-SCHEMATIC1-sim1.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00039)    3.0000 (N00046)    1.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-03
+
+    TOTAL POWER DISSIPATION   3.00E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

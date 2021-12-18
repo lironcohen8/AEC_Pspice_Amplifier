@@ -1,0 +1,127 @@
+
+**** 12/13/21 20:12:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-Bode5"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier-SCHEMA
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "amplifier-SCHEMATIC1-Bode5.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+* From [PSPICE NETLIST] section of pspiceev.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 10000
+.PROBE 
+.INC "amplifier-SCHEMATIC1.net" 
+
+
+**** INCLUDING amplifier-SCHEMATIC1.net ****
+* source AMPLIFIER
+V_V2         N00286 0 5Vdc
+V_V4         N00169 0 DC 0Vdc AC 1Vac 
+R_R1         N00169 N00198  1k  
+R_R2         N00177 N00286  1k  
+R_R3         N00292 N00286  1k  
+R_R4         0 N00363  1k  
+R_R5         0 N00343  1k  
+R_R6         0 N00177  1k  
+C_C1         N00198 N00177  1n  
+C_C2         0 N00343  1n  
+C_C3         N00292 N00363  1n  
+Q_Q1         N00292 N00177 N00343 QbreakN 
+
+**** RESUMING amplifier-SCHEMATIC1-Bode5.sim.cir ****
+.INC "amplifier-SCHEMATIC1.als"
+
+
+
+**** INCLUDING amplifier-SCHEMATIC1.als ****
+.ALIASES
+V_V2            V2(+=N00286 -=0 )
+V_V4            V4(+=N00169 -=0 )
+R_R1            R1(1=N00169 2=N00198 )
+R_R2            R2(1=N00177 2=N00286 )
+R_R3            R3(1=N00292 2=N00286 )
+R_R4            R4(1=0 2=N00363 )
+R_R5            R5(1=0 2=N00343 )
+R_R6            R6(1=0 2=N00177 )
+C_C1            C1(1=N00198 2=N00177 )
+C_C2            C2(1=0 2=N00343 )
+C_C3            C3(1=N00292 2=N00363 )
+Q_Q1            Q1(c=N00292 b=N00177 e=N00343 )
+.ENDALIASES
+
+**** RESUMING amplifier-SCHEMATIC1-Bode5.sim.cir ****
+.END
+
+**** 12/13/21 20:12:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-Bode5"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier-SCHEMA
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 12/13/21 20:12:51 *********** Evaluation PSpice (Nov 1999) **************
+
+ ** Profile: "SCHEMATIC1-Bode5"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier-SCHEMA
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00169)    0.0000 (N00177)    2.4916 (N00198)    0.0000 (N00286)    5.0000     
+
+(N00292)    3.3130 (N00343)    1.7038 (N00363)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -4.195E-03
+    V_V4         0.000E+00
+
+    TOTAL POWER DISSIPATION   2.10E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+
