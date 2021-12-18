@@ -102,13 +102,12 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Outputs")
-      (Select "Design Resources"))
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 1115"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 95 0 1092"))
       (Tab 0)))
   (Folder "Logs")
   (MPSSessionName "user"))

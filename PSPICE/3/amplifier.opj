@@ -1,5 +1,6 @@
 (ExpressProject "Amplifier"
   (ProjectVersion "19981106")
+  (SoftwareVersion "17.4-2021 S007-[12/18/21]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -8,14 +9,20 @@
     (CompileFileAddedOrDeleted "x")
     (PSPICE_Regenerate_Netlist_Flag ".\false")
     (File ".\amplifier.dsn"
-      (Type "Schematic Design")))
+      (Type "Schematic Design"))
+    (DOCKED "TRUE")
+    (DOCKING_POSITION "59420"))
+  (Folder "Layout")
   (Folder "Outputs"
     (File ".\amplifier-pspicefiles\schematic1\schematic1.net"
       (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Model Libraries")
-    (Folder "Stimulus Files")
-    (Folder "Include Files")
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User))
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\amplifier-pspicefiles\schematic1\sim1.sim"
@@ -96,28 +103,26 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier.dsn")
+         "c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\pspice\3\amplifier.dsn")
       (Path "Design Resources"
-         "C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier.dsn"
+         "c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\pspice\3\amplifier.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Select "Design Resources"
-         "C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\PSPICE\amplifier.dsn"
+         "c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\pspice\3\amplifier.dsn"
          "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 1107 0 450"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 95 0 1092"))
       (Tab 0))
     (Doc
-      (Type "COrSchematicDoc")
+      (Type "TextFile")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 185 1415 224 679")
-        (Scroll "0 4")
-        (Zoom "100")
-        (Occurrence "/"))
+        (Placement "44 0 1 -1 -1 -8 -31 5 2225 24 1133"))
       (Path
-         "C:\USERS\USER\ONEDRIVE\DESKTOP\LIRON\STUDIES\PSPICE\PSPICEAMPLIFIERPROJECT\PSPICE\AMPLIFIER.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+         "c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\pspice\3\amplifier-pspicefiles\schematic1\schematic1.net")
+      (Scroll "0")))
+  (Folder "Logs")
+  (MPSSessionName "user"))
