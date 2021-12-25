@@ -1,7 +1,7 @@
 
-**** 12/25/21 11:39:35 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/25/21 11:48:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
 
 
  ****     CIRCUIT DESCRIPTION
@@ -12,7 +12,7 @@
 
 
 
-** Creating circuit file "BiasPoint3.cir" 
+** Creating circuit file "BodeNew.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -23,6 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
+.AC DEC 11 0.1 1G
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -53,12 +54,12 @@ C_C3         N05752 N05468  10n
 C_C4         0 N08093  100p  
 C_C5         0 N05468  100p  
 
-**** RESUMING BiasPoint3.cir ****
+**** RESUMING BodeNew.cir ****
 .END
 
-**** 12/25/21 11:39:35 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/25/21 11:48:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
 
 
  ****     BJT MODEL PARAMETERS
@@ -94,9 +95,9 @@ C_C5         0 N05468  100p
            D     .87         
 
 
-**** 12/25/21 11:39:35 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/25/21 11:48:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -132,9 +133,9 @@ C_C5         0 N05468  100p
 
           JOB CONCLUDED
 
-**** 12/25/21 11:39:35 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/25/21 11:48:04 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
 
 
  ****     JOB STATISTICS SUMMARY
@@ -144,6 +145,6 @@ C_C5         0 N05468  100p
 
 
 
-  License check-out time            =       95.95
-  Total job time (using Solver 1)   =        1.39
+  License check-out time            =       79.15
+  Total job time (using Solver 1)   =        1.41
 

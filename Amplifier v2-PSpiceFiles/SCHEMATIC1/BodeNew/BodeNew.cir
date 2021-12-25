@@ -1,6 +1,6 @@
-** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefiles\schematic1\biaspoint3.sim ] 
+** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFiles\SCHEMATIC1\BodeNew.sim ] 
 
-** Creating circuit file "BiasPoint3.cir" 
+** Creating circuit file "BodeNew.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
 
 *Libraries: 
@@ -11,6 +11,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
+.AC DEC 11 0.1 1G
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
