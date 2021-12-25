@@ -2,20 +2,20 @@
 V_V1         N00940 0 DC 0Vdc AC 1Vac 
 Q_Q1         N05752 N08093 N04350 QbreakN 
 Q_Q2         N06783 N05468 N05176 QbreakN 
-R_Rs         N00940 N10230  50  
-C_C1         N10230 N04350  10n  
+R_Rs         N00940 N10230  57  
+C_C1         N10230 N04350  1u  
 V_V3         N04818 0 5Vdc
-R_RE1         N03641 N04350  4.03k  
+R_RE1         N03641 N04350  4.15k  
 R_RC2         N06783 N04818  1k  
-R_RC1         N05752 0  3k  
-R_RB3         N05468 N04818  10k  
-R_RB4         0 N05468  10k  
-R_RE2         0 N05176  4.64k  
-C_C2         N03641 N04350  100p  
+R_RC1         N05752 N08500  18.9k  
+R_RB3         N05468 N04818  340k  
+R_RB4         0 N05468  550k  
+R_RE2         0 N05176  4k  
+C_C2         N03641 N04350  10n  
 R_RB1         N08098 N08093  100k  
 V_V4         0 N08098 5Vdc
 V_V5         0 N03641 5Vdc
 R_RB2         0 N08093  100k  
-C_C3         N05752 N05468  10n  
-C_C4         0 N08093  100p  
-C_C5         0 N05468  100p  
+C_C3         N05752 N05468  1u  
+C_C4         0 N08093  10n  
+V_V6         N08500 0 5Vdc
