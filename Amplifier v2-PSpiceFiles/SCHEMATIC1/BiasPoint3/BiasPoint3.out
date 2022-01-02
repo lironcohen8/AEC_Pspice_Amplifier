@@ -1,5 +1,5 @@
 
-**** 12/29/21 08:15:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 22:56:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -32,31 +32,36 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source AMPLIFIER V2
-V_V1         N00940 0 DC 0Vdc AC 0.001Vac 
-Q_Q1         N05752 N08093 N04350 QbreakN 
-Q_Q2         N06783 N05468 N05176 QbreakN 
-R_Rs         N00940 N10230  57  
-C_C1         N10230 N04350  1u  
-V_V3         N04818 0 5Vdc
-R_RE1         N03641 N04350  4.15k  
-R_RC2         N06783 N04818  1k  
-R_RC1         N05752 N08500  18.9k  
-R_RB3         N05468 N04818  340k  
-R_RB4         0 N05468  550k  
-R_RE2         0 N05176  4k  
-C_C2         N03641 N04350  10n  
-R_RB1         N08098 N08093  100k  
-V_V4         0 N08098 5Vdc
-V_V5         0 N03641 5Vdc
-R_RB2         0 N08093  100k  
-C_C3         N05752 N05468  1u  
-C_C4         0 N08093  10n  
-V_V6         N08500 0 5Vdc
+V_V1         N00940 0 DC 0Vdc AC 1Vac 
+Q_Q1         N05752 0 N04350 QbreakN 
+Q_Q3         N06783 N05468 N05176 QbreakN 
+C_C1         N00940 N04350  1u  
+V_V5         N24896 0 5Vdc
+R_RE1         N03641 N04350  10k  
+R_RC3         N06783 N24896  200  
+R_RC1         N05752 N08500  10k  
+R_RE3         N10496 N05176  10k  
+C_C2         N03641 N04350  12n  
+V_V2         0 N03641 5Vdc
+C_C3         N05752 N24611  1u  
+V_V3         N08500 0 5Vdc
+R_R1         N20043 0  118  
+R_R2         0 N20043  118  
+C_C5         N05176 N20043  1u  
+Q_Q2         N23388 N24611 0 QbreakN 
+R_RC2         N23388 N24618  150  
+V_V4         N24618 0 5Vdc
+C_C4         N23388 N05468  1n  
+R_RB3         N10496 N05468  10k  
+V_V6         0 N10496 5Vdc
+R_RB2         N24618 N24611  1k  
+R_R5         N05468 N24896  1k  
+C_C6         N24611 N24618  1n  
 
 **** RESUMING BiasPoint3.cir ****
 .END
 
-**** 12/29/21 08:15:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 22:56:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -94,7 +99,7 @@ V_V6         N08500 0 5Vdc
            D     .87         
 
 
-**** 12/29/21 08:15:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 22:56:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -109,11 +114,13 @@ V_V6         N08500 0 5Vdc
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00940)    0.0000 (N03641)   -5.0000 (N04350)   -3.2276 (N04818)    5.0000     
+(N00940)    0.0000 (N03641)   -5.0000 (N04350)    -.5150 (N05176)    3.5515     
 
-(N05176)    1.6949 (N05468)    2.2084 (N05752)   -2.9908 (N06783)    4.5805     
+(N05468)    4.0832 (N05752)     .5594 (N06783)    4.8307 (N08500)    5.0000     
 
-(N08093)   -2.7139 (N08098)   -5.0000 (N08500)    5.0000 (N10230)    0.0000 
+(N10496)   -5.0000 (N20043)    0.0000 (N23388)     .2495 (N24611)     .6312     
+
+(N24618)    5.0000 (N24896)    5.0000 
 
 
 
@@ -122,18 +129,19 @@ V_V6         N08500 0 5Vdc
     NAME         CURRENT
 
     V_V1         0.000E+00
-    V_V3        -4.277E-04
-    V_V4        -2.286E-05
-    V_V5        -4.271E-04
-    V_V6        -4.228E-04
+    V_V5        -1.763E-03
+    V_V2        -4.485E-04
+    V_V3        -4.441E-04
+    V_V4        -3.604E-02
+    V_V6        -1.763E-03
 
-    TOTAL POWER DISSIPATION   6.50E-03  WATTS
+    TOTAL POWER DISSIPATION   2.02E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 12/29/21 08:15:06 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 22:56:20 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -145,6 +153,6 @@ V_V6         N08500 0 5Vdc
 
 
 
-  License check-out time            =         .91
-  Total job time (using Solver 1)   =         .30
+  License check-out time            =       43.45
+  Total job time (using Solver 1)   =         .53
 

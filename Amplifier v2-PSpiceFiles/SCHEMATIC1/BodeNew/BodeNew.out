@@ -1,5 +1,5 @@
-
-**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+**** 01/02/22 23:08:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -23,7 +23,8 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.AC DEC 11 0.1 100G
+.AC DEC 11 0.001 1000G
+.OP
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -33,31 +34,36 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source AMPLIFIER V2
-V_V1         N00940 0 DC 0Vdc AC 0.001Vac 
-Q_Q1         N05752 N08093 N04350 QbreakN 
-Q_Q2         N06783 N05468 N05176 QbreakN 
-R_Rs         N00940 N10230  57  
-C_C1         N10230 N04350  1u  
-V_V3         N04818 0 5Vdc
-R_RE1         N03641 N04350  4.15k  
-R_RC2         N06783 N04818  1k  
-R_RC1         N05752 N08500  18.9k  
-R_RB3         N05468 N04818  340k  
-R_RB4         0 N05468  550k  
-R_RE2         0 N05176  4k  
-C_C2         N03641 N04350  10n  
-R_RB1         N08098 N08093  100k  
-V_V4         0 N08098 5Vdc
-V_V5         0 N03641 5Vdc
-R_RB2         0 N08093  100k  
-C_C3         N05752 N05468  1u  
-C_C4         0 N08093  10n  
-V_V6         N08500 0 5Vdc
+V_V1         N00940 0 DC 0Vdc AC 1Vac 
+Q_Q1         N05752 0 N04350 QbreakN 
+Q_Q3         N06783 N05468 N05176 QbreakN 
+C_C1         N00940 N04350  1u  
+V_V5         N24896 0 5Vdc
+R_RE1         N03641 N04350  10k  
+R_RC3         N06783 N24896  200  
+R_RC1         N05752 N08500  10k  
+R_RE3         N10496 N05176  10k  
+C_C2         N03641 N04350  12n  
+V_V2         0 N03641 5Vdc
+C_C3         N05752 N24611  1u  
+V_V3         N08500 0 5Vdc
+R_R1         N20043 0  118  
+R_R2         0 N20043  118  
+C_C5         N05176 N20043  1u  
+Q_Q2         N23388 N24611 0 QbreakN 
+R_RC2         N23388 N24618  1k  
+V_V4         N24618 0 5Vdc
+C_C4         N23388 N05468  1n  
+R_RB3         N10496 N05468  10k  
+V_V6         0 N10496 5Vdc
+R_RB2         N24618 N24611  100k  
+R_R5         N05468 N24896  1k  
+C_C6         N24611 N24618  1n  
 
 **** RESUMING BodeNew.cir ****
 .END
 
-**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 23:08:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -95,7 +101,7 @@ V_V6         N08500 0 5Vdc
            D     .87         
 
 
-**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 23:08:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -110,11 +116,13 @@ V_V6         N08500 0 5Vdc
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00940)    0.0000 (N03641)   -5.0000 (N04350)   -3.2276 (N04818)    5.0000     
+(N00940)    0.0000 (N03641)   -5.0000 (N04350)    -.5150 (N05176)    3.5515     
 
-(N05176)    1.6949 (N05468)    2.2084 (N05752)   -2.9908 (N06783)    4.5805     
+(N05468)    4.0832 (N05752)     .5594 (N06783)    4.8307 (N08500)    5.0000     
 
-(N08093)   -2.7139 (N08098)   -5.0000 (N08500)    5.0000 (N10230)    0.0000 
+(N10496)   -5.0000 (N20043)    0.0000 (N23388)     .5745 (N24611)     .5745     
+
+(N24618)    5.0000 (N24896)    5.0000 
 
 
 
@@ -123,18 +131,57 @@ V_V6         N08500 0 5Vdc
     NAME         CURRENT
 
     V_V1         0.000E+00
-    V_V3        -4.277E-04
-    V_V4        -2.286E-05
-    V_V5        -4.271E-04
-    V_V6        -4.228E-04
+    V_V5        -1.763E-03
+    V_V2        -4.485E-04
+    V_V3        -4.441E-04
+    V_V4        -4.470E-03
+    V_V6        -1.763E-03
 
-    TOTAL POWER DISSIPATION   6.50E-03  WATTS
+    TOTAL POWER DISSIPATION   4.44E-02  WATTS
+
+
+**** 01/02/22 23:08:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1        Q_Q3        Q_Q2      
+MODEL        QbreakN     QbreakN     QbreakN   
+IB           4.44E-06    8.47E-06    4.43E-05 
+IC           4.44E-04    8.47E-04    4.43E-03 
+VBE          5.15E-01    5.32E-01    5.74E-01 
+VBC         -5.59E-01   -7.47E-01   -1.85E-07 
+VCE          1.07E+00    1.28E+00    5.74E-01 
+BETADC       1.00E+02    1.00E+02    1.00E+02 
+GM           1.72E-02    3.27E-02    1.71E-01 
+RPI          5.82E+03    3.05E+03    5.84E+02 
+RX           0.00E+00    0.00E+00    0.00E+00 
+RO           1.00E+12    1.00E+12    9.18E+09 
+CBE          0.00E+00    0.00E+00    0.00E+00 
+CBC          0.00E+00    0.00E+00    0.00E+00 
+CJS          0.00E+00    0.00E+00    0.00E+00 
+BETAAC       1.00E+02    1.00E+02    1.00E+02 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       2.73E+17    5.21E+17    2.72E+18 
 
 
 
           JOB CONCLUDED
 
-**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/02/22 23:08:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -146,5 +193,6 @@ V_V6         N08500 0 5Vdc
 
 
 
-  Total job time (using Solver 1)   =         .30
+  License check-out time            =       54.20
+  Total job time (using Solver 1)   =         .73
 
