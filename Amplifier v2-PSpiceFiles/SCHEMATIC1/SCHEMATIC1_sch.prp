@@ -17,7 +17,7 @@
                     ("pspice_param"	"DC")
                 )
                 ("ACMAG"
-                    ("value"	"1Vac")
+                    ("value"	"0.001Vac")
                     ("pspice_param"	"AC")
                 )
                 ("BiasValue Power"
@@ -88,13 +88,13 @@
                     ("value"	"1u")
                     ("pspice_param"	"VALUE")
                 )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
                 ("IC"
                     ("value"	"")
                     ("pspice_param"	"IC")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
                 )
             )
         )
@@ -236,13 +236,13 @@
                     ("value"	"10n")
                     ("pspice_param"	"VALUE")
                 )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
                 ("IC"
                     ("value"	"")
                     ("pspice_param"	"IC")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
                 )
             )
         )
@@ -323,13 +323,13 @@
                     ("value"	"1u")
                     ("pspice_param"	"VALUE")
                 )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
                 ("IC"
                     ("value"	"")
                     ("pspice_param"	"IC")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
                 )
             )
         )
@@ -342,13 +342,13 @@
                     ("value"	"10n")
                     ("pspice_param"	"VALUE")
                 )
-                ("TOLERANCE"
-                    ("value"	"")
-                    ("pspice_param"	"TOLERANCE")
-                )
                 ("IC"
                     ("value"	"")
                     ("pspice_param"	"IC")
+                )
+                ("TOLERANCE"
+                    ("value"	"")
+                    ("pspice_param"	"TOLERANCE")
                 )
             )
         )

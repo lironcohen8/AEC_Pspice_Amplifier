@@ -1,7 +1,7 @@
-
-**** 12/25/21 14:56:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
+**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     CIRCUIT DESCRIPTION
@@ -33,7 +33,7 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source AMPLIFIER V2
-V_V1         N00940 0 DC 0Vdc AC 1Vac 
+V_V1         N00940 0 DC 0Vdc AC 0.001Vac 
 Q_Q1         N05752 N08093 N04350 QbreakN 
 Q_Q2         N06783 N05468 N05176 QbreakN 
 R_Rs         N00940 N10230  57  
@@ -57,9 +57,9 @@ V_V6         N08500 0 5Vdc
 **** RESUMING BodeNew.cir ****
 .END
 
-**** 12/25/21 14:56:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     BJT MODEL PARAMETERS
@@ -95,9 +95,9 @@ V_V6         N08500 0 5Vdc
            D     .87         
 
 
-**** 12/25/21 14:56:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -134,9 +134,9 @@ V_V6         N08500 0 5Vdc
 
           JOB CONCLUDED
 
-**** 12/25/21 14:56:08 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 12/29/21 08:15:19 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     JOB STATISTICS SUMMARY
@@ -146,6 +146,5 @@ V_V6         N08500 0 5Vdc
 
 
 
-  License check-out time            =      220.11
-  Total job time (using Solver 1)   =        1.27
+  Total job time (using Solver 1)   =         .30
 

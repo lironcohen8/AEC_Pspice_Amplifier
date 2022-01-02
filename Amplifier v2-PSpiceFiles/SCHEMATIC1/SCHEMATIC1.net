@@ -1,5 +1,5 @@
 * source AMPLIFIER V2
-V_V1         N00940 0 DC 0Vdc AC 1Vac 
+V_V1         N00940 0 DC 0Vdc AC 0.001Vac 
 Q_Q1         N05752 N08093 N04350 QbreakN 
 Q_Q2         N06783 N05468 N05176 QbreakN 
 R_Rs         N00940 N10230  57  
