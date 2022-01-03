@@ -1,7 +1,7 @@
 
-**** 01/03/22 14:13:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
 
 
  ****     CIRCUIT DESCRIPTION
@@ -35,34 +35,34 @@
 V_V1         N00942 0 DC 0Vdc AC 1Vac 
 Q_Q1         N05752 0 N04350 QbreakN 
 Q_Q3         N06783 N24227 N05176 QbreakN 
-C_C1         N001390 N04350  580n  
+C_C1         N001390 N04350  350n  
 V_V5         N24896 0 5Vdc
 R_RE1         N03641 N04350  10k  
 R_RC3         N06783 N24896  200  
 R_RC1         N05752 N08500  10k  
-R_RE3         N10496 N05176  10k  
+R_RE3         N10496 N05176  20k  
 C_C2         N03641 N04350  13.8n  
 V_V2         0 N03641 5Vdc
-C_C3         N05752 N24611  580n  
+C_C3         N05752 N24611  350n  
 V_V3         N08500 0 5Vdc
-R_R1         N20043 0  118  
-R_R2         0 N20043  118  
-C_C5         N05176 N20043  580n  
+R_R1         N20043 0  1.1k  
+R_R2         0 N20043  1.1k  
+C_C5         N05176 N20043  350n  
 Q_Q2         N24227 N24611 0 QbreakN 
-R_RC2         N24227 N24618  500  
+R_RC2         N24227 N24618  250  
 V_V4         N24618 0 5Vdc
 R_RB3         N10496 N24227  10k  
 V_V6         0 N10496 5Vdc
 R_RB2         N24618 N24611  100k  
-R_R5         N24227 N24896  1k  
+R_RB31         N24227 N24896  10k  
 R_Rs         N00942 N001390  60  
 
 **** RESUMING BiasPoint3.cir ****
 .END
 
-**** 01/03/22 14:13:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
 
 
  ****     BJT MODEL PARAMETERS
@@ -98,9 +98,9 @@ R_Rs         N00942 N001390  60
            D     .87         
 
 
-**** 01/03/22 14:13:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -113,11 +113,11 @@ R_Rs         N00942 N001390  60
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00942)    0.0000 (N03641)   -5.0000 (N04350)    -.5150 (N05176)    2.7183     
+(N00942)    0.0000 (N03641)   -5.0000 (N04350)    -.5150 (N05176)    3.1946     
 
-(N05752)     .5594 (N06783)    4.8472 (N08500)    5.0000 (N10496)   -5.0000     
+(N05752)     .5594 (N06783)    4.9189 (N08500)    5.0000 (N10496)   -5.0000     
 
-(N20043)    0.0000 (N24227)    3.2474 (N24611)     .5745 (N24618)    5.0000     
+(N20043)    0.0000 (N24227)    3.7072 (N24611)     .5745 (N24618)    5.0000     
 
 (N24896)    5.0000 (N001390)    0.0000                   
 
@@ -128,21 +128,21 @@ R_Rs         N00942 N001390  60
     NAME         CURRENT
 
     V_V1         0.000E+00
-    V_V5        -2.517E-03
+    V_V5        -5.349E-04
     V_V2        -4.485E-04
     V_V3        -4.441E-04
-    V_V4        -3.550E-03
-    V_V6        -1.597E-03
+    V_V4        -5.215E-03
+    V_V6        -1.280E-03
 
-    TOTAL POWER DISSIPATION   4.28E-02  WATTS
+    TOTAL POWER DISSIPATION   3.96E-02  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 01/03/22 14:13:44 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
 
 
  ****     JOB STATISTICS SUMMARY
@@ -152,6 +152,6 @@ R_Rs         N00942 N001390  60
 
 
 
-  License check-out time            =       46.56
-  Total job time (using Solver 1)   =         .61
+  License check-out time            =       14.61
+  Total job time (using Solver 1)   =         .69
 
