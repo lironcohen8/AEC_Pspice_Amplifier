@@ -1,5 +1,5 @@
 
-**** 01/03/22 14:11:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 14:15:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -23,7 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.AC DEC 11 0.001 1000G
+.AC DEC 11 0.01 100G
 .OP
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
@@ -62,7 +62,7 @@ R_Rs         N00942 N001390  60
 **** RESUMING BodeNew.cir ****
 .END
 
-**** 01/03/22 14:11:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 14:15:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -100,7 +100,7 @@ R_Rs         N00942 N001390  60
            D     .87         
 
 
-**** 01/03/22 14:11:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 14:15:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -139,7 +139,7 @@ R_Rs         N00942 N001390  60
     TOTAL POWER DISSIPATION   4.28E-02  WATTS
 
 
-**** 01/03/22 14:11:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 14:15:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -180,7 +180,7 @@ FT/FT2       2.73E+17    4.70E+17    2.72E+18
 
           JOB CONCLUDED
 
-**** 01/03/22 14:11:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/03/22 14:15:29 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -192,6 +192,6 @@ FT/FT2       2.73E+17    4.70E+17    2.72E+18
 
 
 
-  License check-out time            =       81.33
-  Total job time (using Solver 1)   =         .55
+  License check-out time            =       83.05
+  Total job time (using Solver 1)   =        1.02
 
