@@ -1,7 +1,7 @@
-
-**** 01/03/22 15:32:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspicefi
+**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     CIRCUIT DESCRIPTION
@@ -53,7 +53,7 @@ C_C5         N05176 N20043  350n
 Q_Q2         N24227 N24611 0 QbreakN 
 R_RC2         N24227 N24618  250  
 V_V4         N24618 0 5Vdc
-R_RB3         N10496 N24227  10k  
+R_RB32         N10496 N24227  10k  
 V_V6         0 N10496 5Vdc
 R_RB2         N24618 N24611  100k  
 R_RB31         N24227 N24896  10k  
@@ -62,9 +62,9 @@ R_Rs         N00942 N001390  60
 **** RESUMING BodeNew.cir ****
 .END
 
-**** 01/03/22 15:32:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspicefi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     BJT MODEL PARAMETERS
@@ -100,9 +100,9 @@ R_Rs         N00942 N001390  60
            D     .87         
 
 
-**** 01/03/22 15:32:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspicefi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -139,9 +139,9 @@ R_Rs         N00942 N001390  60
     TOTAL POWER DISSIPATION   3.96E-02  WATTS
 
 
-**** 01/03/22 15:32:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspicefi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
@@ -180,9 +180,9 @@ FT/FT2       2.73E+17    2.50E+17    2.72E+18
 
           JOB CONCLUDED
 
-**** 01/03/22 15:32:36 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BodeNew"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspicefi
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
 
  ****     JOB STATISTICS SUMMARY
@@ -192,6 +192,5 @@ FT/FT2       2.73E+17    2.50E+17    2.72E+18
 
 
 
-  License check-out time            =       24.33
-  Total job time (using Solver 1)   =        1.09
+  Total job time (using Solver 1)   =         .56
 

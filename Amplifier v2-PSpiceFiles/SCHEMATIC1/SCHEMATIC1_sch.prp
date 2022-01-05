@@ -69,13 +69,13 @@
                     ("value"	"350n")
                     ("pspice_param"	"VALUE")
                 )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
                 )
             )
         )
@@ -179,13 +179,13 @@
                     ("value"	"13.8n")
                     ("pspice_param"	"VALUE")
                 )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
                 )
             )
         )
@@ -213,13 +213,13 @@
                     ("value"	"350n")
                     ("pspice_param"	"VALUE")
                 )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
                 )
             )
         )
@@ -285,13 +285,13 @@
                     ("value"	"350n")
                     ("pspice_param"	"VALUE")
                 )
-                ("IC"
-                    ("value"	"")
-                    ("pspice_param"	"IC")
-                )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")
+                )
+                ("IC"
+                    ("value"	"")
+                    ("pspice_param"	"IC")
                 )
             )
         )
@@ -344,18 +344,14 @@
                 )
             )
         )
-        ("RB3"
+        ("RB32"
             ("device_name"	"R")
-            ("pspice_path"	"R_RB3")
+            ("pspice_path"	"R_RB32")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
                     ("value"	"10k")
                     ("pspice_param"	"VALUE")
-                )
-                ("BiasValue Power"
-                    ("value"	"7.582mW")
-                    ("pspice_param"	"BiasValue Power")
                 )
                 ("TOLERANCE"
                     ("value"	"")
