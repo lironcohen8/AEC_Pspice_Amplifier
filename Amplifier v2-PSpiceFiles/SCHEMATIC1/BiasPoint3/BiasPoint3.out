@@ -1,7 +1,7 @@
 
-**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 14:51:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
 
  ****     CIRCUIT DESCRIPTION
@@ -23,6 +23,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
+.OP
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH
 .PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
@@ -60,9 +61,9 @@ R_Rs         N00942 N001390  60
 **** RESUMING BiasPoint3.cir ****
 .END
 
-**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 14:51:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
 
  ****     BJT MODEL PARAMETERS
@@ -98,9 +99,9 @@ R_Rs         N00942 N001390  60
            D     .87         
 
 
-**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 14:51:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
 
  ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -136,13 +137,51 @@ R_Rs         N00942 N001390  60
 
     TOTAL POWER DISSIPATION   3.96E-02  WATTS
 
+
+**** 01/05/22 14:51:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1        Q_Q3        Q_Q2      
+MODEL        QbreakN     QbreakN     QbreakN   
+IB           4.44E-06    4.06E-06    4.43E-05 
+IC           4.44E-04    4.06E-04    4.43E-03 
+VBE          5.15E-01    5.13E-01    5.74E-01 
+VBC         -5.59E-01   -1.21E+00   -3.13E+00 
+VCE          1.07E+00    1.72E+00    3.71E+00 
+BETADC       1.00E+02    1.00E+02    1.00E+02 
+GM           1.72E-02    1.57E-02    1.71E-01 
+RPI          5.82E+03    6.38E+03    5.84E+02 
+RX           0.00E+00    0.00E+00    0.00E+00 
+RO           1.00E+12    1.00E+12    1.00E+12 
+CBE          0.00E+00    0.00E+00    0.00E+00 
+CBC          0.00E+00    0.00E+00    0.00E+00 
+CJS          0.00E+00    0.00E+00    0.00E+00 
+BETAAC       1.00E+02    1.00E+02    1.00E+02 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       2.73E+17    2.50E+17    2.72E+18 
+
 
 
           JOB CONCLUDED
 
-**** 01/03/22 15:32:32 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 14:51:18 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
- ** Profile: "SCHEMATIC1-BiasPoint3"  [ c:\users\user\onedrive\desktop\liron\studies\pspice\pspiceamplifierproject\amplifier v2-pspic
+ ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
 
  ****     JOB STATISTICS SUMMARY
@@ -152,6 +191,6 @@ R_Rs         N00942 N001390  60
 
 
 
-  License check-out time            =       14.61
-  Total job time (using Solver 1)   =         .69
+  License check-out time            =         .59
+  Total job time (using Solver 1)   =         .49
 
