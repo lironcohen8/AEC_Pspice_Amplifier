@@ -353,6 +353,10 @@
                     ("value"	"10k")
                     ("pspice_param"	"VALUE")
                 )
+                ("BiasValue Power"
+                    ("value"	"7.582mW")
+                    ("pspice_param"	"BiasValue Power")
+                )
                 ("TOLERANCE"
                     ("value"	"")
                     ("pspice_param"	"TOLERANCE")

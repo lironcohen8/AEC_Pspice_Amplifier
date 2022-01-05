@@ -1,5 +1,5 @@
 
-**** 01/05/22 15:54:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 16:13:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -61,7 +61,7 @@ R_Rs         N00942 N001390  60
 **** RESUMING BiasPoint3.cir ****
 .END
 
-**** 01/05/22 15:54:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 16:13:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -99,7 +99,7 @@ R_Rs         N00942 N001390  60
            D     .87         
 
 
-**** 01/05/22 15:54:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 16:13:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -138,7 +138,7 @@ R_Rs         N00942 N001390  60
     TOTAL POWER DISSIPATION   3.96E-02  WATTS
 
 
-**** 01/05/22 15:54:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 16:13:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -179,7 +179,7 @@ FT/FT2       2.73E+17    2.50E+17    2.72E+18
 
           JOB CONCLUDED
 
-**** 01/05/22 15:54:49 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/05/22 16:13:22 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BiasPoint3"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspic
 
@@ -191,6 +191,6 @@ FT/FT2       2.73E+17    2.50E+17    2.72E+18
 
 
 
-  License check-out time            =         .64
-  Total job time (using Solver 1)   =         .45
+  License check-out time            =        1.11
+  Total job time (using Solver 1)   =         .50
 
