@@ -1,5 +1,5 @@
 
-**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/07/22 10:32:13 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -34,7 +34,7 @@
 
 **** INCLUDING SCHEMATIC1.net ****
 * source AMPLIFIER V2
-V_V1         N00942 0 DC 0Vdc AC 1Vac 
+V_V1         VIN 0 DC 0Vdc AC 0.01Vac 
 Q_Q1         N05752 0 N04350 QbreakN 
 Q_Q3         N06783 N24227 N05176 QbreakN 
 C_C1         N001390 N04350  350n  
@@ -47,9 +47,9 @@ C_C2         N03641 N04350  13.8n
 V_V2         0 N03641 5Vdc
 C_C3         N05752 N24611  350n  
 V_V3         N08500 0 5Vdc
-R_R1         N20043 0  1.1k  
-R_R2         0 N20043  1.1k  
-C_C5         N05176 N20043  350n  
+R_R1         VOUT 0  1.1k  
+R_R2         0 VOUT  1.1k  
+C_C5         N05176 VOUT  350n  
 Q_Q2         N24227 N24611 0 QbreakN 
 R_RC2         N24227 N24618  250  
 V_V4         N24618 0 5Vdc
@@ -57,12 +57,12 @@ R_RB32         N10496 N24227  10k
 V_V6         0 N10496 5Vdc
 R_RB2         N24618 N24611  100k  
 R_RB31         N24227 N24896  10k  
-R_Rs         N00942 N001390  60  
+R_Rs         VIN N001390  60  
 
 **** RESUMING BodeNew.cir ****
 .END
 
-**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/07/22 10:32:13 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -100,7 +100,7 @@ R_Rs         N00942 N001390  60
            D     .87         
 
 
-**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/07/22 10:32:13 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -115,11 +115,11 @@ R_Rs         N00942 N001390  60
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N00942)    0.0000 (N03641)   -5.0000 (N04350)    -.5150 (N05176)    3.1946     
+(  VIN)    0.0000  ( VOUT)    0.0000  (N03641)   -5.0000 (N04350)    -.5150     
 
-(N05752)     .5594 (N06783)    4.9189 (N08500)    5.0000 (N10496)   -5.0000     
+(N05176)    3.1946 (N05752)     .5594 (N06783)    4.9189 (N08500)    5.0000     
 
-(N20043)    0.0000 (N24227)    3.7072 (N24611)     .5745 (N24618)    5.0000     
+(N10496)   -5.0000 (N24227)    3.7072 (N24611)     .5745 (N24618)    5.0000     
 
 (N24896)    5.0000 (N001390)    0.0000                   
 
@@ -139,7 +139,7 @@ R_Rs         N00942 N001390  60
     TOTAL POWER DISSIPATION   3.96E-02  WATTS
 
 
-**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/07/22 10:32:13 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -180,7 +180,7 @@ FT/FT2       2.73E+17    2.50E+17    2.72E+18
 
           JOB CONCLUDED
 
-**** 01/05/22 15:55:03 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+**** 01/07/22 10:32:13 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
 
  ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefi
 
@@ -192,5 +192,5 @@ FT/FT2       2.73E+17    2.50E+17    2.72E+18
 
 
 
-  Total job time (using Solver 1)   =         .56
+  Total job time (using Solver 1)   =         .89
 
