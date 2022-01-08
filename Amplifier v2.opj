@@ -1,10 +1,10 @@
 (ExpressProject "Amplifier v2"
   (ProjectVersion "19981106")
-  (SoftwareVersion "17.4-2021 S007-[01/07/22]")
+  (SoftwareVersion "17.4-2021 S007-[01/08/22]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
-    ("Allegro Netlist Directory" "allegro")
+    (Allegro Netlist Directory "allegro")
     (DOCKED "TRUE")
     (DOCKING_POSITION "59420")
     (NoModify)
@@ -20,28 +20,13 @@
   (Folder "PSpice Resources"
     (Folder "Simulation Profiles"
       (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier v2-pspicefiles\schematic1\biaspoint.sim"
-        (DisplayName "SCHEMATIC1-BiasPoint")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier v2-pspicefiles\schematic1\biaspoint2.sim"
-        (DisplayName "SCHEMATIC1-BiasPoint2")
-        (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
          ".\amplifier v2-pspicefiles\schematic1\biaspoint3.sim"
         (DisplayName "SCHEMATIC1-BiasPoint3")
         (Type "PSpice Profile"))
-      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
-         ".\amplifier v2-pspicefiles\schematic1\bodenew.sim"
-        (DisplayName "SCHEMATIC1-BodeNew")
-        (Type "PSpice Profile"))
-      (ActiveProfile ".\amplifier v2-pspicefiles\schematic1\bodenew.sim"))
-    (Folder "Model Libraries"
-      (Sort User))
-    (Folder "Stimulus Files"
-      (Sort User))
-    (Folder "Include Files"
-      (Sort User)))
+      (ActiveProfile ".\amplifier v2-pspicefiles\schematic1\biaspoint3.sim"))
+    (Folder "Model Libraries")
+    (Folder "Stimulus Files")
+    (Folder "Include Files"))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
   (PartMRUSelector
@@ -91,9 +76,7 @@
          "Design Cache")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "PSpice Resources" "Simulation Profiles"
-         "C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefiles\schematic1\biaspoint2.sim"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -103,8 +86,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 5 24 5 2232 24 1188")
-        (Scroll "-350 -11")
+        (Placement "44 0 1 -1 -1 5 24 5 2046 24 1188")
+        (Scroll "-257 -11")
         (Zoom "154")
         (Occurrence "/"))
       (Path

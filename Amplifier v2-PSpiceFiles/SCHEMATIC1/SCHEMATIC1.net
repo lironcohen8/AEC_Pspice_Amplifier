@@ -1,14 +1,14 @@
 * source AMPLIFIER V2
 V_V1         VIN 0 DC 0Vdc AC 0.01Vac 
-Q_Q1         N05752 0 VRIN QbreakN 
+Q_Q1         N05752 0 N04350 QbreakN 
 Q_Q3         N06783 N24227 N05176 QbreakN 
-C_C1         N001390 VRIN  350n  
+C_C1         N001390 N04350  350n  
 V_V5         N24896 0 5Vdc
-R_RE1         N03641 VRIN  10k  
+R_RE1         N03641 N04350  10k  
 R_RC3         N06783 N24896  200  
 R_RC1         N05752 N08500  10k  
 R_RE3         N10496 N05176  20k  
-C_C2         N03641 VRIN  13.8n  
+C_C2         N03641 N04350  13.8n  
 V_V2         0 N03641 5Vdc
 C_C3         N05752 N24611  350n  
 V_V3         N08500 0 5Vdc

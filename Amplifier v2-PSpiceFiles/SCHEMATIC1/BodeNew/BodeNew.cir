@@ -1,4 +1,4 @@
-** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\amplifier v2-pspicefiles\schematic1\bodenew.sim ] 
+** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\Liron\Studies\PSPICE\PspiceAmplifierProject\Amplifier v2-PSpiceFiles\SCHEMATIC1\BodeNew.sim ] 
 
 ** Creating circuit file "BodeNew.cir" 
 ** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
@@ -11,7 +11,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.AC DEC 11 0.01 100G
+.AC DEC 11 40 400Meg
 .OP
 .OPTIONS ADVCONV
 .OPTIONS FILEMODELSEARCH

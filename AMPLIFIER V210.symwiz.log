@@ -1,7 +1,0 @@
-STATUS: PSpice Model Import Wizard for "Capture" (17.4.0.d001)
-STATUS:  
-   INFO: OLB driven flow
-   INFO: Input File: C:\USERS\USER\ONEDRIVE\DESKTOP\LIRON\STUDIES\PSPICE\PSPICEAMPLIFIERPROJECT\AMPLIFIER V210.olb
-   INFO: Symbol Name: QbreakN_1
-  ERROR: Symbol "QbreakN_1" not found in symbol library "C:\USERS\USER\ONEDRIVE\DESKTOP\LIRON\STUDIES\PSPICE\PSPICEAMPLIFIERPROJECT\AMPLIFIER V210.olb".
-STATUS: 1 Error messages, 0 Warning messages
