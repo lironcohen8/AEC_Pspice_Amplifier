@@ -1,0 +1,196 @@
+
+**** 01/08/22 17:19:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\amplifier v2-pspicefiles\schematic1\bodenew.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "BodeNew.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\17.4.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 11 40 400Meg
+.OP
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source AMPLIFIER V2
+V_V1         VIN 0 DC 0Vdc AC 1Vac 
+Q_Q1         N05752 0 N04350 QbreakN 
+Q_Q3         N06783 N24227 N05176 QbreakN 
+C_C1         N001390 N04350  350n  
+V_V5         N24896 0 5Vdc
+R_RE1         N03641 N04350  10k  
+R_RC3         N06783 N24896  200  
+R_RC1         N05752 N08500  10k  
+R_RE3         N10496 N05176  20k  
+C_C2         N03641 N04350  13.8n  
+V_V2         0 N03641 5Vdc
+C_C3         N05752 N24611  350n  
+V_V3         N08500 0 5Vdc
+R_R1         VOUT 0  1.1k  
+R_R2         0 VOUT  1.1k  
+C_C5         N05176 VOUT  350n  
+Q_Q2         N24227 N24611 0 QbreakN 
+R_RC2         N24227 N24618  250  
+V_V4         N24618 0 5Vdc
+R_RB32         N10496 N24227  10k  
+V_V6         0 N10496 5Vdc
+R_RB2         N24618 N24611  100k  
+R_RB31         N24227 N24896  10k  
+R_Rs         VIN N001390  60  
+
+**** RESUMING BodeNew.cir ****
+.END
+
+**** 01/08/22 17:19:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\amplifier v2-pspicefiles\schematic1\bodenew.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 01/08/22 17:19:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\amplifier v2-pspicefiles\schematic1\bodenew.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VIN)    0.0000  ( VOUT)    0.0000  (N03641)   -5.0000 (N04350)    -.7518     
+
+(N05176)    3.0133 (N05752)     .7939 (N06783)    4.9207 (N08500)    5.0000     
+
+(N10496)   -5.0000 (N24227)    3.7636 (N24611)     .8113 (N24618)    5.0000     
+
+(N24896)    5.0000 (N001390)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V5        -5.203E-04
+    V_V2        -4.248E-04
+    V_V3        -4.206E-04
+    V_V4        -4.987E-03
+    V_V6        -1.277E-03
+
+    TOTAL POWER DISSIPATION   3.82E-02  WATTS
+
+
+**** 01/08/22 17:19:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\amplifier v2-pspicefiles\schematic1\bodenew.sim ] 
+
+
+ ****     OPERATING POINT INFORMATION      TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+
+
+
+**** BIPOLAR JUNCTION TRANSISTORS
+
+
+NAME         Q_Q1        Q_Q3        Q_Q2      
+MODEL        QbreakN     QbreakN     QbreakN   
+IB           4.21E-06    3.97E-06    4.19E-05 
+IC           4.21E-04    3.97E-04    4.19E-03 
+VBE          7.52E-01    7.50E-01    8.11E-01 
+VBC         -7.94E-01   -1.16E+00   -2.95E+00 
+VCE          1.55E+00    1.91E+00    3.76E+00 
+BETADC       1.00E+02    1.00E+02    1.00E+02 
+GM           1.63E-02    1.53E-02    1.62E-01 
+RPI          6.15E+03    6.52E+03    6.17E+02 
+RX           0.00E+00    0.00E+00    0.00E+00 
+RO           1.00E+12    1.00E+12    1.00E+12 
+CBE          0.00E+00    0.00E+00    0.00E+00 
+CBC          0.00E+00    0.00E+00    0.00E+00 
+CJS          0.00E+00    0.00E+00    0.00E+00 
+BETAAC       1.00E+02    1.00E+02    1.00E+02 
+CBX/CBX2     0.00E+00    0.00E+00    0.00E+00 
+FT/FT2       2.59E+17    2.44E+17    2.58E+18 
+
+
+
+          JOB CONCLUDED
+
+**** 01/08/22 17:19:02 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-BodeNew"  [ C:\Users\user\OneDrive\Desktop\amplifier v2-pspicefiles\schematic1\bodenew.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .45
+
